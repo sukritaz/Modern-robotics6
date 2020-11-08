@@ -59,4 +59,3 @@ $\delta Qs =
 0 & sin\phi & cos\phi\\
 \end{pmatrix}
 $
-$ \sum_{\forall i}{x_i^{2}} $
