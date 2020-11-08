@@ -14,7 +14,7 @@ This part of the project requires to find the next configuration of the robot gi
 _3 variables for the chassis configuration, 5 variables for the arm configuration, and 4 variables for the wheel angles._
 
 This is acheived by using simple Euler iterations:
-\next $cconfig$ = $cconfig+\delta$$Qs*\delta$$t$
+$next$ $cconfig$ = $cconfig+\delta$$Qs*\delta$$t$
 $next$ $joint$ $angle$ = $current $ $joint$ $ angle$$+joint$ $speed$$*\delta$$t$
 $next$ $wheel$ $angle$ = $wheel$ $angle$ $+wheel$ $angle*$$\delta$$t$
 
@@ -59,3 +59,4 @@ $\delta Qs =
 0 & sin\phi & cos\phi\\
 \end{pmatrix}
 $
+$ \sum_{\forall i}{x_i^{2}} $
