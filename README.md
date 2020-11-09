@@ -1,6 +1,6 @@
 # Introduction:
 The modern robotics capstone project deals with robotic manipulation of the KUKA YouBot4. This bot has a holonomic base with 4meccanum wheels attached to the base with a 5DOF arm. To view the deatils of the project, click [here.](http://hades.mech.northwestern.edu/index.php/Mobile_Manipulation_Capstone)
-![](.data/Youbot4.png)
+![](../.data/Youbot4.png)
 
 # Index:
 - [Milestone1: Odometry](#Milestone1)
