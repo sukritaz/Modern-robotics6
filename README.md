@@ -11,11 +11,11 @@ The modern robotics capstone project deals with robotic manipulation of the KUKA
 <a name="Milestone1"></a>
 # Milestone1:
 This part of the project requires to find the next configuration of the robot given the 12vector representation of current orientation.
-_3 variables for the chassis configuration, 5 variables for the arm configuration, and 4 variables for the wheel angles._
+3 variables for the chassis configuration, 5 variables for the arm configuration, and 4 variables for the wheel angles.
 
 This is acheived by using simple Euler iterations:
-$next$ $cconfig$ = $cconfig+\delta$$Qs*\delta$$t$
-$next$ $joint$ $angle$ = $current $ $joint$ $ angle$$+joint$ $speed$$*\delta$$t$
+$ next $ $cconfig$ = $ cconfig+\delta$$Qs*\delta$$t$
+$ next$ $joint$ $ angle$ = $current $ $joint$ $ angle$$+joint$ $speed$$*\delta$$t$
 $next$ $wheel$ $angle$ = $wheel$ $angle$ $+wheel$ $angle*$$\delta$$t$
 
 Here, $cconfig$- chassis configration
@@ -59,3 +59,4 @@ $\delta Qs =
 0 & sin\phi & cos\phi\\
 \end{pmatrix}
 $
+![](.data/Milestone1eq.png)
