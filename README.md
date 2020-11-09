@@ -59,4 +59,4 @@ $\delta Qs =
 0 & sin\phi & cos\phi\\
 \end{pmatrix}
 $
-![image](.data/Milestone1eq.png)
+![Milestone1eq](https://user-images.githubusercontent.com/45617702/98543538-a73c3600-22b8-11eb-9dd8-7fab669bbb0b.PNG)
