@@ -14,49 +14,4 @@ This part of the project requires to find the next configuration of the robot gi
 3 variables for the chassis configuration, 5 variables for the arm configuration, and 4 variables for the wheel angles.
 
 This is acheived by using simple Euler iterations:
-$ next $ $cconfig$ = $ cconfig+\delta$$Qs*\delta$$t$
-$ next$ $joint$ $ angle$ = $current $ $joint$ $ angle$$+joint$ $speed$$*\delta$$t$
-$next$ $wheel$ $angle$ = $wheel$ $angle$ $+wheel$ $angle*$$\delta$$t$
-
-Here, $cconfig$- chassis configration
-$\delta$$Qs$- Chassis configuartion expressed in space frame as [x, y, $\phi$]
-$\delta$$t$- time period of operation. (0.01 seconds)
-However the main catch of this exerciseis to evaluate the value of $\delta$$Qs$.
-Using wheel velocities we can calculate the base twist $Vb$.
-$Vb$ = $\tilde{H}$$(0)*u$
-$\tilde{H}$$(0)$- Pseudo inverse of $H(0)$ which is the matrix relating base twist to joint velocities. $H(0)$ matrix:
-$$
-\frac{1}{r}
-\begin{pmatrix}
--l-w & 1 & -1\\
-l+w & 1 & 1 \\
-l+w & 1 &-1\\
--l-w &1 &1
-\end{pmatrix}
-\begin{pmatrix}
-wbx\\ 
-vbx\\
-vby
-\end{pmatrix}
-$$
-
-Now we have the value of $Vb$ in terms of [$wb,vx,vy$] we need to convert it to [$x, y, \phi$].
-To convert $Vb$ to $\delta Qb$:
-If $wz=0, \delta Qb = vb$
-Otherwise,
-If $wbz \ne 0$, $\delta Qb =$$
-\begin{pmatrix}
-wbz\\
-\frac{vbx*sin(wbz) +vby (cos(wbz)-1)}{wbz} \\
-\frac{vby*sin(wbz) +vbx (1-cos(wbz))}{wbz}\\
-\end{pmatrix}
-$
-The desired value should be converted to a fixed frame {s}. This can be done by using the an appropriate rotation.
-$\delta Qs =
-\begin{pmatrix}
-1 & 0 & 0\\
-0 & cos\phi & -sin\phi \\
-0 & sin\phi & cos\phi\\
-\end{pmatrix}
-$
 ![Milestone1eq](https://user-images.githubusercontent.com/45617702/98543538-a73c3600-22b8-11eb-9dd8-7fab669bbb0b.PNG)
