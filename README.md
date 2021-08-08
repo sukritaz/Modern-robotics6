@@ -37,8 +37,7 @@ conguration.
 6. A trajectory to move the gripper to the final configuration of the object.
 7. Opening of the gripper.
 8. A trajectory to move the gripper back to the "standoff" configuration.
-
-![traj1](https://user-images.githubusercontent.com/45617702/128624534-72bdfc91-3410-4312-addd-152b15955749.png)
+![traj1](https://user-images.githubusercontent.com/45617702/128625061-40ce377b-b956-44d0-ae1a-f691c875a1a1.png)
 ![traj2](https://user-images.githubusercontent.com/45617702/128624574-0fe7789e-6993-4613-806a-e3ffa7dc96d9.png)
 ![traj3](https://user-images.githubusercontent.com/45617702/128624596-4262b65c-7e1f-49af-b1e3-3746d07a8251.png)
 ![traj4](https://user-images.githubusercontent.com/45617702/128624620-b32657ce-d22e-4834-ab4e-aae73c6a941e.png)
