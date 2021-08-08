@@ -7,6 +7,7 @@ The modern robotics capstone project deals with robotic manipulation of the KUKA
 - [Milestone2: Trajectory Generation](#Milestone2)
 - [Milestone3: PI controller](#Milestone3)
 - [Overview](#Overview)
+- [Results](#results)
 
 <a name="Milestone1"></a>
 # Milestone1:
@@ -65,3 +66,7 @@ The structure of the project as per my understanding is as follows:
   Where Toe = Fkbody(m,thetalist,blist)
   thetalist is the arm config.
 - Remember that the values of o/p from psuedo Jacobian and end effector twist are in the order of Uarm and Ubase, not what we typically considered in Milestone1.
+
+<a name="results"></a>
+# Results
+![image](https://user-images.githubusercontent.com/45617702/128625175-24910e13-6bfd-4f69-93ae-c57d8e8badc3.png)
