@@ -69,4 +69,4 @@ The structure of the project as per my understanding is as follows:
 
 <a name="results"></a>
 # Results
-![image](https://user-images.githubusercontent.com/45617702/128625175-24910e13-6bfd-4f69-93ae-c57d8e8badc3.png)
+![image align="center"](https://user-images.githubusercontent.com/45617702/128625175-24910e13-6bfd-4f69-93ae-c57d8e8badc3.png)
